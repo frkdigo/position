@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Furkó Norbert</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#">Menü</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Menü(le)</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Menü</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Position</h1>
+            <div class="kepek">
+                <img src="img/letöltés.jpg" alt="kep1">
+                <img src="img/letöltés2.jpg" alt="kep2">
+                <img src="img/letöltés4.jpg" alt="kep3">
+            </div>
+        </article>
+        <aside>
+            <img src="img/letöltés4.jpg" alt="kep4">
+            <div class="infopanel">
+                <div class="container">
+                    <div class="xgomb">X</div>
+                    <form class="gombocska">
+                        <fieldset>
+                            <legend>Tetszik ez a Position dolog?</legend>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">Igen</label> <br>
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">Nem</label> <br>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <script>
+        var closebtns = document.getElementsByClassName("xgomb");
+        var i;
+        
+        for (i = 0; i < closebtns.length; i++) {
+          closebtns[i].addEventListener("click", function() {
+            this.parentElement.style.display = 'none';
+          });
+        }
+        </script>
+</body>
+
+</html>
